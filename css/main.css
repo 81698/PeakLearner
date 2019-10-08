@@ -1,0 +1,277 @@
+
+/*  Fonts  */
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('../fonts/raleway-regular.eot');
+    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular.woff') format('woff'),
+         url('../fonts/raleway-regular.ttf') format('truetype'),
+         url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'raleway-bold';
+    src: url('../fonts/raleway-bold.eot');
+    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold.woff') format('woff'),
+         url('../fonts/raleway-bold.ttf') format('truetype'),
+         url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'raleway-semibold';
+    src: url('../fonts/raleway-semibold.eot');
+    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-semibold.woff') format('woff'),
+         url('../fonts/raleway-semibold.ttf') format('truetype'),
+         url('../fonts/raleway-semibold.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*  General CSS*/
+
+h1, h2, h3, h4, h5 ,h6{
+    color: #6d6d6d;
+    font-family: "raleway-regular", arial;
+    letter-spacing: 1px;
+}
+
+h1              { font-size: 2em;}
+h2              { font-size: 1.5em;}
+h3              { font-size: 1.17em;}
+h5              { font-size: .83em;}
+h6              { font-size: .75em;}
+h1, h2, h3, h4,
+h5, h6          { font-weight: bolder }
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+ 
+.clearfix {  
+    *zoom: 1;  
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/*  header  */
+header{
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+    position: relative;
+}
+
+header .team_name{
+    margin-top: 60px;
+    font-size: 50px;
+    color: #490757;
+    float: left;
+}
+
+header nav{
+    float: right;
+    margin-top: 80px;
+}
+
+header nav ul li{
+    list-style: none;
+    float: left;
+    margin-left: 45px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #5e5d5d;
+    font-family: "raleway-regular", arial;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+
+    transition:all .2s linear;
+    -o-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+}
+
+header nav ul li a:hover,
+header nav ul .selected{
+    color: #490757;
+}
+
+/*  services  */
+.services{
+    padding: 100px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.section_title{
+    width: 333px;
+    height: auto;
+    margin-right: 50px;
+    float: left;
+}
+
+.services h2,
+.services h3{
+    margin: 0;
+}
+
+
+.services .services_list{
+    width: 717px;
+    float: right;
+}
+
+.services .services_list ul{
+    list-style: none;
+}
+
+.services .services_list ul li{
+    width: 212px;
+    float: left;
+    margin-right: 40px;
+}
+
+.services .services_list ul li:last-child{
+    margin-right: 0;
+}
+
+.services .services_list h3{
+    color: #5e5e5e;
+    font-family: "raleway-bold", arial;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.services .services_list p{
+    color: #8c8b8b;
+    font-family: "raleway-regular";
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 24px;
+    letter-spacing: .5px;
+}
+
+.services .services_list a{
+    text-decoration: none;
+    color: #6c6c6c;
+    font-family: "raleway-regular";
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+.services .services_list a .arrow{
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+/*  projects  */
+.projects{
+    padding: 100px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.projects .section_title .details{
+    text-decoration: none;
+    color: #6d6d6d;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+.projects .section_title .details .arrow{
+    margin-left: 5px;
+}
+
+.projects_list ul{
+    list-style: none;
+}
+
+.projects_list ul li a{
+    display: block;
+    width: 325px;
+    height: 300px;
+    float: left;
+    margin-right: 50px;
+    background: #f2f2f2;
+    position: relative;
+    border: 4px solid #eeeded;
+
+    transition:all .2s linear;
+    -o-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.projects_list ul li:last-child a{
+    margin-right: 0;
+}
+
+.projects_list ul li a:hover{
+    background: #ff4242;
+    border: 4px solid #ec3636;
+}
+
+.projects_list ul li a span{
+    position: absolute;
+    height: 124px;
+    top: 50%;
+    margin-top: -62px;
+
+    transition:all .2s linear;
+    -o-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -webkit-transition:all .2s linear;
+}
+
+/*  call to action  */
+.cta{
+    width: 100%;
+    padding: 100px 0;
+    background: #fafafa;
+    text-align: center;
+}
+
+/*  footer  */
+footer{
+    padding: 100px 0;
+}
+
+footer .copyright{
+    width: 333px;
+    height: auto;
+    margin-right: 50px;
+    float: left;
+}
+
+footer .copyright p{
+    color: #8d8b8b;
+    font-family: "raleway-regular", arial;
+    font-size: 12px;
+    letter-spacing: .5px;
+    margin-bottom: 15px;
+}
