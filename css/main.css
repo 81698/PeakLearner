@@ -81,7 +81,7 @@ header{
 }
 
 header .team_name{
-    margin-top: 60px;
+    margin-top: 30px;
     font-size: 50px;
     color: #490757;
     float: left;
@@ -89,7 +89,7 @@ header .team_name{
 
 header nav{
     float: right;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 header nav ul li{
@@ -113,7 +113,7 @@ header nav ul li a{
 
 header nav ul li a:hover,
 header nav ul .selected{
-    color: #490757;
+    color: #BC9ECC;
 }
 
 /*  services  */
