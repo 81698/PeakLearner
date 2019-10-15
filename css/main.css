@@ -35,13 +35,12 @@
          url('../fonts/raleway-semibold.svg#ralewaysemibold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /*  General CSS*/
 
-h1, h2, h3, h4, h5 ,h6{
-    color: #6d6d6d;
+h1, h2, h3, h4, h5 ,h6，p1{
+    color: #5B5B5B;
     font-family: "raleway-regular", arial;
     letter-spacing: 1px;
 }
@@ -93,9 +92,11 @@ header nav{
 }
 
 header nav ul li{
-    list-style: none;
     float: left;
-    margin-left: 45px;
+    width: 150px;
+    color: red;
+    font-size: 30px;
+    text-align: center;
 }
 
 header nav ul li a{
@@ -274,4 +275,9 @@ footer .copyright p{
     font-size: 12px;
     letter-spacing: .5px;
     margin-bottom: 15px;
+}
+
+.table{
+    margin-left: 150px;
+    margin-right: 150px;
 }
